@@ -18,9 +18,12 @@ Repetition (01 = 1st repetition, 02 = 2nd repetition).
 Actor (01 to 24. Odd numbered actors are male, even numbered actors are female).
 
 <li> For ML Prototype, only audio speech files are used and  Random Forest algorithm  is used for classifying emotions </li>
+<li> For Strorage Google drive was used and each file was then read into google colab </li>
+<li> <b> Scaling </b><li> Since audio file/data the mean is taken and fed to the model this approach can scale easily byt  using the any audio files and extracting and storing the mean of mfcc for that file which is not  storage intensive
 
 <li><b>approach taken for  feature engineering  : Cepstral mean and variance normalization (CMVN)</b> is a computationally efficient normalization technique for robust speech recognition.
-For each audio file the <a href = https://en.wikipedia.org/wiki/Mel-frequency_cepstrum>mfccs</a>was extracted using python library <a href = https://librosa.github.io/librosa/>Librosa</a></li>
+For each audio file the <a href = https://en.wikipedia.org/wiki/Mel-frequency_cepstrum>mfccs</a> was extracted using python library <a href = https://librosa.github.io/librosa/>Librosa</a>the number of mfcc's extracted was 20 then mean of the mfcc was taken for each audio file, with sampling rate same for each file i.e 3 seconds the ML protoype is in the file </li>
+
 
 
 
