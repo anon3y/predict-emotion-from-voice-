@@ -17,7 +17,8 @@ Repetition (01 = 1st repetition, 02 = 2nd repetition).
 
 Actor (01 to 24. Odd numbered actors are male, even numbered actors are female).
 
+<b> For ML Prototype Random Forest is used for classifying emotions <b>
+<b>approach taken for  feature engineering <b> : Cepstral mean and variance normalization (CMVN) is a computationally efficient normalization technique for robust speech recognition. 
 
-<b>Method used for feature engineering <b> : Cepstral mean and variance normalization (CMVN) is a computationally efficient normalization technique for robust speech recognition. 
   
   
