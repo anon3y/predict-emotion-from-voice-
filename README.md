@@ -19,7 +19,7 @@ Actor (01 to 24. Odd numbered actors are male, even numbered actors are female).
 
 <li> For ML Prototype, only audio speech files are used and  Random Forest algorithm  is used for classifying emotions </li>
 
-<b>approach taken for  feature engineering <b> : Cepstral mean and variance normalization (CMVN) is a computationally efficient normalization technique for robust speech recognition. 
+<li><b>approach taken for  feature engineering <b> : Cepstral mean and variance normalization (CMVN) is a computationally efficient normalization technique for robust speech recognition. </li>
 
   
   
