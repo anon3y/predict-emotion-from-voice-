@@ -17,12 +17,28 @@ Repetition (01 = 1st repetition, 02 = 2nd repetition).
 
 Actor (01 to 24. Odd numbered actors are male, even numbered actors are female).
 
-<li> For ML Prototype, only audio speech files are used and  Random Forest algorithm  is used for classifying emotions </li>
 <li> For Strorage Google drive was used and each file was then read into google colab </li>
-<li> <b> Scaling </b><li> Since audio file/data the mean is taken and fed to the model this approach can scale easily byt  using the any audio files and extracting and storing the mean of mfcc for that file which is not  storage intensive
 
 <li><b>approach taken for  feature engineering  : Cepstral mean and variance normalization (CMVN)</b> is a computationally efficient normalization technique for robust speech recognition.
-For each audio file the <a href = https://en.wikipedia.org/wiki/Mel-frequency_cepstrum>mfccs</a> was extracted using python library <a href = https://librosa.github.io/librosa/>Librosa</a>the number of mfcc's extracted was 20 then mean of the mfcc was taken for each audio file, with sampling rate same for each file i.e 3 seconds the ML protoype is in the file </li>
+For each audio file the<a href = https://en.wikipedia.org/wiki/Mel-frequency_cepstrum>mfccs</a> was extracted using python library <a href = https://librosa.github.io/librosa/>Librosa</a>the number of mfcc's extracted was 20 then mean of the mfcc was taken for each audio file, with sampling rate same for each file i.e 3 seconds.
+
+<li> <b> ML approach to classify emotions </b>, only audio speech files are used and  Random Forest algorithm  is used for classifying emotions the ML protoype is in the file ML_Prototype.ipynb in the repository </li>
+
+<b> Scaling </b>
+<li> Since audio file/data the mean is taken and fed to the model this approach can scale easily byt  using the any audio files and extracting and storing the mean of mfcc for that file which is not  storage intensive </li>
+
+<b> DL Approach to classify emotions</b>
+
+<li> each audio file is read from google drive and mffcc are extracted then spectrogram is plotted using  <a href = https://librosa.github.io/librosa/>Librosa</a> and stored on gdrive for training the model. each Spectogram is then fed to a CNN network to produce the classification prediction.DL protoype is in the file DL_Prototype.ipynb in the repository</li>
+<b> Scaling </b>
+<li> for training each audio file is converted to .jpg images and stored on gdrive, this approach is also not storage intensive and can scale with newer data to train </li>
+
+
+
+
+
+
+
 
 
 
